@@ -1,13 +1,8 @@
 ﻿using System;
 namespace MapElitesHS
 {
-    public class BehaviorVector
+    public abstract class BehaviorVectorConfiguration
     {
-        int numberOfCards = 0;
-        int numberOfBattleCryCards = 0;
-
-        public BehaviorVector()
-        {
-        }
+        public abstract ArrayList getBehaviorCoordinate(Deck chromosome);
     }
 }
